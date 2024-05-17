@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="homestyle.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100.
+    .900&family=Sedan:ital@0;1&family=Suranna&family=Teko:wght@300..700&display=swap" 
+    rel="stylesheet">
+
+</head>
+<body>
+
+<header>
+<div class="container">
+    <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search..."> 
+        <button id="search-button">Search</button> 
+    </div>
+
+    <div class="panel">
+        <ul>  
+            <li><a href="Index.html">Index</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+        </ul>
+    </div>
+</div>
+</nav>
+<hr>
+</header>
+
+<div class="head-menu">
+    <section class= "upper">
+    <p class = "up1"> 
+    <a id= "up1">
+    BEST PERFUME OF 2024 <br> 
+    <b> PERFUMES</b>
+    </p></a>
+    
+    <p class="up2">
+    <b> LONG LASTING </b>
+    </p>
+    
+    <p class="up3">
+        Long-lasting, our perfume envelopes you in  <br>
+        a captivating aroma that lingers throughout the day, <br> 
+        leaving an unforgettable impression wherever you go.
+    </p>
+    
+     <div class="shopnow">
+        <a href="Product.html" class="buy-button">SHOP NOW!</a>
+      </a>
+    </div>
+    </section>
+</div>
+
+<div class="row"> 
+    <div class="pic">
+        <section class="pic1">
+            <a href="product.html#AboutJoMalone"> <!-- Link to the second HTML file with the bookmark -->
+                <img src="images/jobest.png" alt="Jo Malon Product"> 
+            </a>
+        </section>
+    </div>
+
+    <div class="pic"> 
+        <section class="pic2">
+            <a href="product.html#AboutVersace"> 
+                <img src="images/verbest.png" alt="Versace Product"> 
+            </a>
+        </section>
+    </div>
+</div>
+
+<div class="row">
+    <div class="pic">
+        <section class="pic3">
+            <a href="product.html#AboutCk">  
+                <img src="images/ckbest.png" alt="Calvin Klein Product"> 
+            </a>
+        </section>
+    </div>
+
+    <div class="pic"> 
+        <section class="pic4">
+            <a href="product.html#AboutMont">  
+                <img src="images/montbest.png" alt="MONTBLANC Product"> 
+            </a>
+        </section>
+    </div>
+</div>
+
+<table>
+    <tr>
+        <td class="slidea">
+            <div class="slides slides1">
+                <video controls>
+                    <source src="video/The World Of Jo Malone London.mp4" type="video/mp4">
+                    
+                </video>
+            </div>
+        </td>
+        <td class="slideb">
+            <div class="slides slides2">
+                <video controls>
+                    <source src="video/Hyunjin for Versace Holiday _ Campaign Film _ Versace.mp4" type="video/mp4">
+                </video>
+            </div>
+        </td>
+        <td class="slidea">
+            <div class="slides slides3">
+                <video controls>
+                    <source src="video/Richard Madden for Calvin Klein Defy _ Introducing The New Fragrance for Men.mp4" type="video/mp4">
+                </video>
+            </div>
+        </td>
+        <td class="slideb">
+            <div class="slides slides4">
+                <video controls>
+                    <source src="video/MontBlanc Legend Perfume Ad - Made at Home.mp4" type="video/mp4">
+                </video>
+            </div>
+        </td>
+    </tr>
+</table>
+
+
+<div class="description">
+        <p>Heaven's Elixir: Where luxury meets essence. Discover a realm of sophistication
+             and refinement in every drop, crafted to elevate your senses and leave an indelible 
+             mark of elegance. Experience the epitome of indulgence with Heaven's Elixir.
+        </p>       
+    </div>
+    <script>
+        
+document
+.getElementById("search-button")
+.addEventListener("click", function () {
+  var searchQuery = document
+    .getElementById("search-input")
+    .value.toLowerCase();
+
+  switch (searchQuery) {
+    case "index":
+      window.location.href = "Index.html";
+      break;
+    case "home":
+      window.location.href = "home.html";
+      break;
+    case "product":
+      window.location.href = "product.html";
+      break;
+    case "about us":
+      window.location.href = "aboutus.html";
+      break;
+    case "contact us":
+      window.location.href = "contactus.html";
+      break;
+    default:
+      alert("No matching page found for the search query.");
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+body {
+    background-image: url("images/elixirbg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .navbar {
+    text-align: center;
+    /* Center the logo horizontally */
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  header {
+    background-color: rgb(200, 112, 112);
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .container a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  
+  .container a:last-child {
+    margin-right: 10px;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .search-bar button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .search-bar button:hover {
+    background-color: #0056b3;
+  }
+
+  .panel ul {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .panel ul li {
+    margin-right: 40px;
+  }
+  
+  .panel ul li a {
+    font-size: 22px;
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: inline-block;
+    border: none;
+  }
+  
+  .panel ul li a:hover {
+    font-weight: bold;
+  }
+  
+  .panel {
+    padding-bottom: 1px;
+    color: blue;
+    position: relative;
+  }
+  
+  .panel::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transform: translateY(3px);
+    background: rgb(106, 32, 32);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+  
+  .panel:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+  }

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="productstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100,900;1,100,900&family=Sedan:ital@0;1&family=Suranna&family=Teko:wght@300,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search...">
+            <button id="search-button">Search</button>
+        </div>
+
+        <div class="panel">
+            <ul>
+                <li><a href="Index.html">Index</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+                <div class="container">
+                <div class="shopping">
+                    <li>
+                        <img src="images/shopping.svg" class="icon-cart">
+                        <span class="cart-count">0</span>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <hr>
+</header>
+
+<div class="list"></div>
+<div class="card">
+    <h1>SHOPPING CART</h1> 
+    <ul class="ProductList"></ul>
+    <div class="checkOut">
+        <div class="total">0</div>
+        <div class="Confirm">Confirm</div>
+        <div class="CloseShopping">Close</div>
+    </div>
+</div>  
+
+<table>
+    <tr>
+        <td class="slidemain">
+            <h1><b>HEAVEN'S ELIXIR</b></h1>
+            <p>Heaven's Elixir: Where luxury meets essence. Discover a realm of sophistication and refinement in every drop,
+                 crafted to elevate your senses and leave an indelible mark of elegance. Experience the epitome of indulgence with
+                  Heaven's Elixir.</p>
+            <a href="home.html"><button><b>HOME</b></button></a>
+        </td>
+        <td class="slidea">
+            <a href="#AboutJoMalone">
+                <div class="slides slide1">
+                    <h5><b>Jo Malone Perfume</b></h5>
+                    <p>For her. For him. For the home.</p>
+                </div>
+            </a>
+            <a href="#AboutCk">
+                <div class="slides slides2">
+                    <h5><b>Calvin Klein Perfume</b></h5>
+                    <p>The only way to advertise is by not focusing on the product.</p>
+                </div>
+            </a>
+        </td>
+        <td class="#AboutJoMalone">
+            <a href="#AboutVersace">
+                <div class="slides slides3">
+                    <h5><b>Versace Perfume</b></h5>
+                    <p>Decide what you are, what you want to express by the way you dress and the way you live.</p>
+                </div>
+            </a>
+            <a href="#AboutMont">
+                <div class="slides slides4">
+                    <h5><b>Mont Blanc Perfume</b></h5>
+                    <p>To inspire people to express their full potential.</p>
+                </div>
+            </a>
+        </td>
+    </tr>
+</table>
+<hr>
+
+<div class="JoMalone">
+    <h1 id="AboutJoMalone">Jo Malone Men's Collection</h1>
+</div>
+<table class="center">
+    <tr>
+        <td>
+            <div class="listCard"></div>
+            <section class="retail" id="retail">
+                <div class="essential">
+                    <img src="images/jomalonelogo.png" alt="Lime Basil & Mandarin Cologne">
+                    <div class="desc" onclick="addToCart('Lime Basil & Mandarin Cologne', 0)">
+                        <h1>Lime Basil & Mandarin Cologne</h1>
+                        <p>Peppery Basil and aromatic white thyme bring unexpected twist</p>
+                        <h5><b>Add to Cart</b> <br> PHP 6,500.00 | 50ml</h5>
+                    </div>
+                </div>
+            </section>
+        </td>
+
+        <td>
+            <div class="essential">
+                <img src="images/jomalonelogo.png" alt="Fig & Lotus Flower Cologne">
+                <div class="desc" onclick="addToCart('Fig & Lotus Flower Cologne', 1)">
+                    <h1>Fig & Lotus Flower Cologne</h1>
+                    <p>Luscious lotus flowers skim the surface of a shimmering pond in the ancient Hanging Garden.</p>
+                    <h5><b>Add to Cart</b> <br> PHP 9,300.00 | 100ml</h5>
+                </div>
+            </div>
+        </td>
+
+        <td>
+            <div class="essential">
+                <img src="images/jomalonelogo.png" alt="Wood Sage & Sea Salt Cologne">
+                <div class="desc" onclick="addToCart('Wood Sage & Sea Salt Cologne', 2)">
+                    <h1>Wood Sage & Sea Salt Cologne</h1>
+                    <p>Escape the everyday along the windswept shore.</p>
+                    <h5><b>Add to Cart</b> <br> PHP 6,500 | 50ml</h5>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<hr><br>
+
+<div class="Ck">
+    <h1 id="AboutCk">Calvin Klein Men's Collection</h1>
+</div>
+<table class="center">
+    <tr>
+        <td>
+            <div class="essential">
+                <img src="images/cklogo.png" alt="CK One">
+                <div class="desc" onclick="addToCart('CK One', 3)">
+                    <h1>CK One</h1>
+                    <p>eau de toilette</p>
+                    <h5><b>Add to Cart</b> <br> PHP 5,090.00 | 200ml</h5>
+                </div>
+            </div>
+        </td>
+        <td>
+            <div class="essential">
+                <img src="images/cklogo.png" alt="CK BE">
+                <div class="desc" onclick="addToCart('CK BE', 4)">
+                    <h1>CK BE</h1>
+                    <p>eau de toilette</p>
+                    <h5><b>Add to Cart</b> <br> PHP 5,980.00 | 200ml</h5>
+                </div>
+            </div>
+        </td>
+        <td>
+            <div class="essential">
+                <img src="images/cklogo.png" alt="Eternity Aqua Men">
+                <div class="desc" onclick="addToCart('Eternity Aqua Men', 5)">
+                    <h1>Eternity Aqua Men</h1>
+                    <p>eau de toilette</p>
+                    <h5><b>Add to Cart</b> <br> PHP 5,500.00 | 100ml</h5>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<hr><br>
+
+<div class="Versace">
+    <h1 id="AboutVersace">Versace Men's Collection</h1>
+</div>
+<table class="center">
+    <tr>
+        <td>
+            <div class="essential">
+                <img src="images/versacelogo.png" alt="Versace Eros EDT">
+                <div class="desc" onclick="addToCart('Versace Eros EDT', 6)">
+                    <h1>Versace Eros EDT</h1>
+                    <p>EROS</p>
+                    <h5><b>Add to Cart</b> <br> PHP 6,500.00 | 100ml</h5>
+                </div>
+            </div>
+        </td>
+        <td>
+            <div class="essential">
+                <img src="images/versacelogo.png" alt="Versace Man Eau">
+                <div class="desc" onclick="addToCart('Versace Man Eau', 7)">
+                    <h1>Versace Man Eau</h1>
+                    <p>Eau</p>
+                    <h5><b>Add to Cart</b> <br> PHP 5,800.00 | 100ml</h5>
+                </div>
+            </div>
+        </td>
+        <td>
+            <div class="essential">
+                <img src="images/versacelogo.png" alt="Versace Blue Jeans">
+                <div class="desc" onclick="addToCart('Versace Blue Jeans', 8)">
+                    <h1>Versace Blue Jeans</h1>
+                    <p>Blue Jeans</p>
+                    <h5><b>Add to Cart</b> <br> PHP 3,400.00 | 75ml</h5>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<hr><br>
+
+<div class="Mont">
+    <h1 id="AboutMont">Mont Blanc Men's Collection</h1>
+</div>
+<table class="center">
+    <tr>
+        <td>
+            <div class="essential">
+                <img src="images/montblanclogo.png" alt="Legend Red">
+                <div class="desc" onclick="addToCart('Legend Red', 9)">
+                    <h1>Legend Red</h1>
+                    <p>Experience Legend Red</p>
+                    <h5><b>Add to Cart</b> <br> PHP 4,500.00 | 100ml</h5>
+                </div>
+            </div>
+        </td>
+        <td>
+            <div class="essential">
+                <img src="images/montblanclogo.png" alt="Explorer">
+                <div class="desc" onclick="addToCart('Explorer', 10)">
+                    <h1>Explorer</h1>
+                    <p>Discover Explorer</p>
+                    <h5><b>Add to Cart</b> <br> PHP 4,700.00 | 100ml</h5>
+                </div>
+            </div>
+        </td>
+        <td>
+            <div class="essential">
+                <img src="images/montblanclogo.png" alt="Emblem">
+                <div class="desc" onclick="addToCart('Emblem', 11)">
+                    <h1>Emblem</h1>
+                    <p>Discover Emblem</p>
+                    <h5><b>Add to Cart</b> <br> PHP 3,900.00 | 100ml</h5>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+
+</body>
+<script>
+        
+    document
+    .getElementById("search-button")
+    .addEventListener("click", function () {
+      var searchQuery = document
+        .getElementById("search-input")
+        .value.toLowerCase();
+    
+      switch (searchQuery) {
+        case "index":
+          window.location.href = "Index.html";
+          break;
+        case "home":
+          window.location.href = "home.html";
+          break;
+        case "product":
+          window.location.href = "product.html";
+          break;
+        case "about us":
+          window.location.href = "aboutus.html";
+          break;
+        case "contact us":
+          window.location.href = "contactus.html";
+          break;
+        default:
+          alert("No matching page found for the search query.");
+      }
+    });
+    </script>
+<script src="shop.js"></script>
+</html>
+
+

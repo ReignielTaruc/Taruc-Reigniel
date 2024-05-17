@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link rel="stylesheet" href="indexstyle.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&family=Teko:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Search..." />
+      <button id="search-button">Search</button>
+    </div>
+
+    <div class="fptitle">
+      <h1>
+        Heaven's <br />
+        Elixir
+      </h1>
+      <div class="nav">
+        <h2>"catchphrase" wala pa</h2>
+      </div>
+
+      <div class="panel">
+        <ul>
+          <li>
+            <a href="home.html"><button>Home</button></a>
+          </li>
+          <li>
+            <a href="product.html"><button>Product</button></a>
+          </li>
+          <li>
+            <a href="aboutus.html"
+              ><button>About Us</button></a
+            >
+          </li>
+          <li>
+            <a href="contanctus.html"
+              ><button>Contact Us</button></a
+            >
+          </li>
+        </ul>
+      </div>
+      
+      <a href="home.html"> <img src="video/clickable.gif" alt="Square Picture" class="square-picture"></a>
+    
+  
+      <br /><br /><br />
+      <table id="description-table">
+        <tr>
+          <td id="company-description">
+            <p>
+              Heaven's Elixir, established in 2024, stands as a beacon of trust
+              and sophistication in the realm of retail. As a revered purveyor
+              of luxury goods, we curate an exquisite collection that epitomizes
+              elegance and refinement. Specializing in the finest offerings from
+              renowned brands, including Calvin Klein, Jo Malone, Versace, and
+              Mont Blanc, our esteemed establishment has garnered universal
+              recognition. With a commitment to excellence, Heaven's Elixir
+              ensures that every product embodies the essence of quality and
+              distinction. Step into our world and indulge in the unparalleled
+              allure of the top brands trusted by connoisseurs worldwide.
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+<br><br><br><br>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Heaven's Elixir. All rights reserved.</p>
+        <p>
+          <a href="https://www.facebook.com">Facebook</a> |
+          <a href="https://twitter.com">Twitter</a> |
+          <a href="https://www.instagram.com">Instagram</a> |
+          <a href="https://www.youtube.com">YouTube</a>
+        </p>
+      </div>
+    </footer>
+    <script>
+        
+      document
+      .getElementById("search-button")
+      .addEventListener("click", function () {
+        var searchQuery = document
+          .getElementById("search-input")
+          .value.toLowerCase();
+      
+        switch (searchQuery) {
+          case "index":
+            window.location.href = "Index.html";
+            break;
+          case "home":
+            window.location.href = "home.html";
+            break;
+          case "product":
+            window.location.href = "product.html";
+            break;
+          case "about us":
+            window.location.href = "aboutus.html";
+            break;
+          case "contact us":
+            window.location.href = "contactus.html";
+            break;
+          default:
+            alert("No matching page found for the search query.");
+        }
+      });
+      </script>
+  </body>
+</html>
